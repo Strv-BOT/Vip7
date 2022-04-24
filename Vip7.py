@@ -1631,12 +1631,41 @@ def token_gratis():
 	exit()
 
 def useragent():
-	print ("\n%s[%s01%s]>_Ganti user agent "%(P,B,P))
-	print ("%s[%s02%s]>_Cek user agent "%(P,B,P))
-	print ("%s[%s00%s]>_Kembali "%(P,B,P))
-	hikmat = input('\n%s[%s+%s]>_Pilih :%s '%(P,H,P,B))
-	ua_device_ini()
+	print('[01] Pilih Otomatis')
+	print('[02] Cek User Agent')
+	print('[03] Kembali')
+	badag = input('>_ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	if badag in ['1','01']:
+		pilih_otomatis()
+	elif badag in ['2','02']:
+		ua_device_ini()
+	elif badag in ['3','03']:
+		krekefbi()
 	
+def pilih_otomatis():
+    pilih_device()
+    dc = input('   %s└──> %s'%(A,J))
+    if dc in ['0','00','z']:     open('tool/useragent.json','w').write(ua_default)
+    elif dc in ['1','01','a']:   open('tool/useragent.json','w').write(ua_samsung)
+    elif dc in ['2','02','b']:   open('tool/useragent.json','w').write(ua_nokia)
+    elif dc in ['3','03','c']:   open('tool/useragent.json','w').write(ua_xiaomi)
+    elif dc in ['4','04','d']:   open('tool/useragent.json','w').write(ua_oppo)
+    elif dc in ['5','05','e']:   open('tool/useragent.json','w').write(ua_vivo)
+    elif dc in ['6','06','f']:   open('tool/useragent.json','w').write(ua_iphone)
+    elif dc in ['7','07','g']:   open('tool/useragent.json','w').write(ua_asus)
+    elif dc in ['8','08','h']:   open('tool/useragent.json','w').write(ua_lenovo)
+    elif dc in ['9','09','i']:   open('tool/useragent.json','w').write(ua_huawei)
+    elif dc in ['10','010','j']: open('tool/useragent.json','w').write(ua_windows)
+    elif dc in ['11','011','k']: open('tool/useragent.json','w').write(ua_chrome)
+    elif dc in ['12','012','l']: open('tool/useragent.json','w').write(ua_fb)
+    else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
+    try:
+        pilihan = open('tool/useragent.json','r').read()
+        printer(Panel(f'''{A2}{pilihan}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Sukses Diganti {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
+        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(J,P,J));tampilan_menu()
+        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(J,P,J));exit('\n')
+    except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
+
 def ua_device_ini():
     url = 'https://www.google.com/search?q=my+user+agent'
     try:
