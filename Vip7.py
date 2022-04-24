@@ -203,9 +203,9 @@ def muda():
 	result()
 def pedo():
 	file()
-def furi():
-	bapakmu()
-	
+def tua():
+	useragent()
+
 def bottzy():
 	jalan('>_Menu BOT') 
 	print('[01]>_BOT Share')
@@ -1630,7 +1630,7 @@ def token_gratis():
 	print("""%s \33[1;33m\n\nEAABsbCS1iHgBACi23luB3rXpkQtaxs8CudZBPlieKZCZCMYnBJZBxmF3bQmi1Gp9Pb0bwgHpvXqqKoNtacjgbTtn70aoFGrqyZApVySEpDWhLMV4s6wkztXbzrCHdQytXVm3WwXLYVWVnsA5jM1FyfBZAB8wZBHeUrcL0W7J6fIOAZDZD """%(h))
 	exit()
 
-def bapakmu():
+def useragent():
     global pengguna_source_code
     pengguna_source_code = isi
     try:os.mkdir("tool")
