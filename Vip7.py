@@ -1635,15 +1635,16 @@ def useragent():
 	print ("%s[%s02%s]>_Cek user agent "%(P,B,P))
 	print ("%s[%s00%s]>_Kembali "%(P,B,P))
 	hikmat = input('\n%s[%s+%s]>_Pilih :%s '%(P,H,P,B))
-	cek_user_agent()
+	ua_device_ini()
 	
-def cek_user_agent():
+def ua_device_ini():
+    url = 'https://www.google.com/search?q=my+user+agent'
     try:
-        usera = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{usera}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Saat Ini {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
-        input('\n   %s[ %sKembali %s]'%(J,P,J))
-        tampilan_menu()
-    except Exception as e:kecuali(e)
+        if "linux" in sys.platform.lower():chrome_path = '/usr/bin/google-chrome %s';webbrowser.get(chrome_path).open(url)
+        elif "win" in sys.platform.lower():chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s';webbrowser.get(chrome_path).open(url)
+        else:chrome_path = 'open -a /Applications/Google\ Chrome.app %s';webbrowser.get(chrome_path).open(url)
+        manual_user_agent()
+    except Exception as e:print('\n   %s[%s•%s] %sTidak Dapat Menemukan Useragent %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);
                         
 if __name__=='__main__':
 	try:os.mkdir('CP')
