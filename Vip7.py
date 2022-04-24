@@ -1634,7 +1634,7 @@ def useragent():
 	print('[01] Pilih Otomatis')
 	print('[02] Cek User Agent')
 	print('[03] Kembali')
-	 dc = input('  %s𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉└──> %s'%(A,J))
+	 dc = input('>_ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
 	elif dc in ['1','01','b']:pilih_otomatis()
 	elif dc in ['2','02','d']:ua_device_ini()
 	elif dc in ['3','03','z']:krekefbi()
