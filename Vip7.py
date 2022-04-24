@@ -1632,7 +1632,6 @@ def token_gratis():
 
 def useragent():
 	global pengguna_source_code
-    pengguna_source_code = isi
     try:os.mkdir("tool")
     except:pass
     pilih_menu_user_agent()
