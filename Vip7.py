@@ -220,6 +220,51 @@ def bottzy():
 def kanjoed():
 	main()
 
+def menu():
+	try:sh = requests.get('https://httpbin.org/ip').json()
+	except:sh = {'origin':'-'}
+	try:
+		tglx = my_birthday.split('/')[1]
+		blnx = dic2[str(my_birthday.split('/')[0])]
+		thnx = my_birthday.split('/')[2]
+		birth = tglx+' '+blnx+' '+thnx
+	except:birth = '-'
+	banner()
+	sg = '>_Menu Tools Crack Facebook'
+	fx = mark(sg, style='red')
+	sol().print(fx)
+	#print(x+'['+h+'•'+x+'] \033[0;33m>_Nama Kamu  : '+str(my_name))
+	#print(x+'['+h+'•'+x+'] \033[0;33m>_ID Kamu    : '+str(my_id))
+	#print(x+'['+h+'•'+x+'] \033[33m>_Tanggal Kamu  : '+str(birth))
+	#print(x+'['+h+'•'+x+'] \033[33m>_IP Kamu   : '+str(sh['origin']))
+	io = '\x1b[1;95m[01] >_Crack Dari Pertemanan Publik\n\x1b[1;95m[02] >_Crack ID Dari Akun Publik (Massal) \n\x1b[1;95m[03] >_Crack Dari Grup\n\x1b[1;95m[04] >_Cek Hasil Crack\n\033\x1b[1;95m[05] >_Cek Hasil Crack [00] >_Keluar'
+	oi = nel(io, style='cyan')
+	cetak(nel(oi, title='>_Pilih 1 Sampai 8'))
+	jh = input('\033[33m>_Pilih : ')
+	if jh in ['1','01']:
+		dump_publik()
+	elif jh in ['2','02']:		
+		dump_massal()
+	elif jh in ['3','03']:
+		grup()
+	elif jh in ['4','04']:
+		result()
+	elif jh in ['5','05']:
+		file()
+		#elif jh in ['10','0010']:
+		#fritoken()
+	elif jh in ['0','00']:
+		os.system('rm -rf .token.txt')
+		print('\033[33m>_Tunggu ...')
+		time.sleep(1)
+		sw = '>_Berhasil Keluar'
+		sol().print(mark(sw, style='green'))
+		exit()
+	else:
+		ric = '>_Pilih Yang Benar'
+		sol().print(mark(ric, style='red'))
+		exit()
+
 def dump():
 	try:
 		it = input('%s[%s•%s] %sID Target : '%(O,P,O,P))
