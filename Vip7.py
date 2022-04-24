@@ -189,7 +189,7 @@ def krekefbi():
 	elif badag in ['5','05']:
 		pedo()
 	elif badag in ['6','06']:
-		furi()
+		tua()
 	elif badag in ['0','00']:
 		menu_test()
 	
