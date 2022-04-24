@@ -1635,39 +1635,15 @@ def useragent():
 	print ("%s[%s02%s]>_Cek user agent "%(P,B,P))
 	print ("%s[%s00%s]>_Kembali "%(P,B,P))
 	hikmat = input('\n%s[%s+%s]>_Pilih :%s '%(P,H,P,B))
-	uas(hikmat)
+	cek_user_agent()
 	
-def uas(hikmat):
-	if hikmat == '':
-		print ('\n%s[%s!%s]>_Yang bener kontol'%(P,B,P));jeda(2)
-		uas(hikmat)
-	elif hikmat in("1","01"):
-		print ("%s[%s!%s]>_Ketik %scancel%s untuk gunakan ua dari script"%(P,B,P,H,P))
-		ua = input("%s[%s!%s]>_User agent :%s "%(P,H,P,B))
-		if ua in(""):
-			print ('\n%s[%s!%s]>_Yang bener kontol'%(P,H,P));jeda(2)
-			menu()
-		elif ua in("CANCEL","Cancel","cancel"):
-			ua_ = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
-			open("ua.txt","w").write(ua_);jeda(2)
-			print ("\n%s[%s✓%s] >_Berhasil menggunakan user agent script "%(P,B,P));jeda(2)
-			pilihan().menu()
-		open("ua.txt","w").write(ua);time.sleep(2)
-		print ("\n%s[%s✓%s]>_Berhasil mengganti user agent"%(P,H,P));time.sleep(2)
-		menu()
-	elif hikmat in("2","02"):
-		try:
-			ua_ = open('ua.txt', 'r').read();time.sleep(2)
-			print ("%s[%s+%s]>_User anget lu :%s%s "%(P,H,P,B,ua_));time.sleep(2)
-			input('\n%s[%s!%s]>_Tekan enter '%(P,B,P))
-			menu()
-		except IOError:
-			ua_ = '%s-'%(M)
-	elif hikmat in("0","00"):
-		menu()
-	else:
-		print ('\n%s[%s!%s]>_Yang bener kontol'%(P,B,P));time.sleep(2)
-		uas(hikmat)
+def cek_user_agent():
+    try:
+        usera = open('tool/useragent.json','r').read()
+        printer(Panel(f'''{A2}{usera}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Saat Ini {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
+        input('\n   %s[ %sKembali %s]'%(J,P,J))
+        tampilan_menu()
+    except Exception as e:kecuali(e)
                         
 if __name__=='__main__':
 	try:os.mkdir('CP')
