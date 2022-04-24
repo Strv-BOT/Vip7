@@ -1631,10 +1631,6 @@ def token_gratis():
 	exit()
 
 def useragent():
-    global pengguna_source_code
-    pengguna_source_code = isi
-    try:os.mkdir("tool")
-    except:pass
     pilih_menu_user_agent()
     dc = input('   %s└──> %s'%(A,J))
     if dc in ['1','01','a']:scrap_useragent()
