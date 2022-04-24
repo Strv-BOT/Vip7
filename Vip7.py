@@ -1617,11 +1617,10 @@ def main():
         
 		
 def token_gratis():
-	clear()
-	banner()
+	jalan()
 	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
-	print("""%s \33[1;32m SILAHKAN DI AMBIL """%(h))
-	print("""%s \33[1;32m MAKASIH SUDAH MEMAKAI TOLLS SAYA """%(h))
+	print("""%s \33[1;32m 𝑺𝑰𝑳𝑨𝑯𝑲𝑨𝑵 𝑫𝑰 𝑨𝑴𝑩𝑰𝑳 """%(h))
+	print("""%s \33[1;32m 𝑴𝑨𝑲𝑨𝑺𝑰𝑯 𝑺𝑼𝑫𝑨𝑯 𝑴𝑬𝑴𝑨𝑲𝑨𝑰 𝑻𝑶𝑳𝑳𝑺 𝑺𝑨𝒀𝑨 s """%(h))
 	print("""%s ●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬▬▬▬▬▬● """%(h))
 	print("""%s \33[1;33m\nEAABsbCS1iHgBAKNJF1ZAMH6SXHFIrwWLpPyoRxsaxbKz7BUb8ozNRZArLtr9WZCe8kPUzwxZB3BRFTzd6BsyKjCXcJQxwSyfelVsfVQkT3fIGuoB8nL3Bhez5sJpkWapEFo1ZBS274aVPoQObFdO0zAb0sIDwfWr6C4XNDlke9nCdrP5ZBL8ZB5 """%(h))
 	print("""%s \33[1;33m\n\nEAABsbCS1iHgBADvC8POMgY7VF14f52GXuKG5rTw5NEQbfnL7fI0oZAeCCv8Q8ohtLDWMtfZBZCrpV80z2DCdrjbhGFhZAYOdmJmbXy5EY2nlMrqXo5ArXnQISyZAUzCBlyMZCDYPyAQ6Icamsw883vadxzoDimX6FsBFwE2ZCiG8wZDZD """%(h))
