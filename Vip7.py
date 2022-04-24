@@ -1631,13 +1631,16 @@ def token_gratis():
 	exit()
 
 def useragent():
-	print('[01] Pilih Otomatis')
-	print('[02] Cek User Agent')
-	print('[03] Kembali')
-	 dc = input('>_ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
+	global pengguna_source_code
+    pengguna_source_code = isi
+    try:os.mkdir("tool")
+    except:pass
+    pilih_menu_user_agent()
+    dc = input('   %s└──> %s'%(A,J))
 	elif dc in ['1','01','b']:pilih_otomatis()
 	elif dc in ['2','02','d']:ua_device_ini()
 	elif dc in ['3','03','z']:krekefbi()
+    else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 	
 def pilih_otomatis():
     pilih_device()
