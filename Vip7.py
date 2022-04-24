@@ -162,7 +162,7 @@ def menu_test():
 	elif kanjut in ['2','02']:
 		bottzy()
 	elif kanjut in ['3','03']:
-        useragent()
+        useragent():
 	elif kanjut in ['0','00']:
 		os.system('rm -rf .token.txt')
 		print('\033[33m>_𝑻𝒖𝒏𝒈𝒈𝒖 ...')
