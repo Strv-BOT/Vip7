@@ -162,7 +162,7 @@ def menu_test():
 	elif kanjut in ['2','02']:
 		bottzy()
 	elif kanjut in ['3','03']:
-        useragent():
+        bapakmu()
 	elif kanjut in ['0','00']:
 		os.system('rm -rf .token.txt')
 		print('\033[33m>_𝑻𝒖𝒏𝒈𝒈𝒖 ...')
@@ -1628,7 +1628,7 @@ def token_gratis():
 	print("""%s \33[1;33m\n\nEAABsbCS1iHgBACi23luB3rXpkQtaxs8CudZBPlieKZCZCMYnBJZBxmF3bQmi1Gp9Pb0bwgHpvXqqKoNtacjgbTtn70aoFGrqyZApVySEpDWhLMV4s6wkztXbzrCHdQytXVm3WwXLYVWVnsA5jM1FyfBZAB8wZBHeUrcL0W7J6fIOAZDZD """%(h))
 	exit()
 
-def useragent():
+def bapakmu():
     global pengguna_source_code
     pengguna_source_code = isi
     try:os.mkdir("tool")
