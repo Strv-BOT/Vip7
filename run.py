@@ -192,7 +192,7 @@ def banner():
 •  _/      _/     _/_/   _/_/_/  _/ V.01 Beta •
 •                                             • 
 •      𝐌𝐔𝐋𝐓𝐈 𝐂𝐑𝐀𝐂𝐊𝐈𝐍𝐆 𝐈𝐃 𝐏𝐔𝐁𝐋𝐈𝐊 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊      •
-•     GITHUB : HTTPS://GITHUB.COM/Strv-BOT     •'''
+•     GITHUB : HTTPS://GITHUB.COM/Strv-BOT    •'''
 	oi = nel(tekz(ban,justify='center',style='bold'), style='cyan')
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
 
@@ -1463,7 +1463,7 @@ def logo():
 		
 def infoauthor():
         print("%sMakasih Telah Menggunkan Tools Saya"%(N))
-        jalan(f" {BM}{P}SC INFO{N}\n [{H}•{N}] Author SC : {K}Strovmirviaska\n {N}[{H}•{N}] Whatsapp : {K}082290238779\n {N}[{H}•{N}] Github : {K}https://github.com/Strv-BOT\n {N}[{H}•{N}] Status SC : Gratis rasa {H}Premium{N}\n {N}[{H}•{N}] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.{N}\n\n {BM}FIX BUG{N}\n [{H}✓{N}] Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\n [{H}✓{N}] Sedikit perubahan warna text dan tampilan SC\n [{H}✓{N}] Perubahan user agent bawaan SC\n [{H}✓{N}] Penambahan menampilkan {H}Web & Aplikasi AKTIF{N}")
+        jalan(f" Author SC : {K}Strovmirviaska\n {N}[{H}•{N}] Whatsapp : {K}082290238779\n {N}[{H}•{N}] Github : {K}https://github.com/Strv-BOT\n {N}[{H}•{N}] Status SC : Gratis rasa {H}Premium{N}\n {N}[{H}•{N}] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.{N}\n\n {BM}FIX BUG{N}\n [{H}✓{N}] Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\n [{H}✓{N}] Sedikit perubahan warna text dan tampilan SC\n [{H}✓{N}] Perubahan user agent bawaan SC\n [{H}✓{N}] Penambahan menampilkan {H}Web & Aplikasi AKTIF{N}")
         upd = input('\n %s[%s?%s] Send direct message to Author [%sY%s/%st%s] : '%(N,K,N,H,N,M,N))
         if upd =="":
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
