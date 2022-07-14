@@ -1463,7 +1463,7 @@ def logo():
 		
 def infoauthor():
         print("%sMakasih Telah Menggunkan Tools Saya"%(N))
-        jalan(f" Author SC : {K}Strovmirviaska\n {N}[{H}•{N}] Whatsapp : {K}082290238779\n {N}[{H}•{N}] Github : {K}https://github.com/Strv-BOT\n {N}[{H}•{N}] Status SC : Gratis rasa {H}Premium{N}\n {N}[{H}•{N}] WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.{N}\n\n {BM}FIX BUG{N}\n [{H}✓{N}] Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\n [{H}✓{N}] Sedikit perubahan warna text dan tampilan SC\n [{H}✓{N}] Perubahan user agent bawaan SC\n [{H}✓{N}] Penambahan menampilkan {H}Web & Aplikasi AKTIF{N}")
+        jalan(f" Author SC : {K}Strovmirviaska\nWhatsapp : 082290238779\nGithub : https://github.com/Strv-BOT\nStatus SC : Gratis rasa Premium\nWARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.\n\nFIX BUG\n ✓ Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\nSedikit perubahan warna text dan tampilan SC\n✓ Perubahan user agent bawaan SC\n✓ Penambahan menampilkan Web & Aplikasi AKTIF")
         upd = input('\n %s[%s?%s] Send direct message to Author [%sY%s/%st%s] : '%(N,K,N,H,N,M,N))
         if upd =="":
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
