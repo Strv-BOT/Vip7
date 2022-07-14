@@ -247,9 +247,7 @@ def tolol(my_name,my_id):
 	logo()
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'github.com/Strv-BOT'
-	sol().print(mark(ler, style='cyan'))
-	krek = ('\tSelamat Datang [yellow]%s [white]Ngentod'%(my_name))
-	cetak(nel(krek, title='AKUN TUMBAL'))
+	print(f'\tSelamat Datang [yellow]%s [white]Ngentod'%(my_name))
 	print(f'>> Your Idz : '+str(my_id))
 	print(f'>> Your Ip  : {ip}')
 	print(f'>> Github   : {gh}')
@@ -552,7 +550,7 @@ def setting():
 	pwplus=input('=)> Tambahkan Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] anjing,ngentod,sayang[white] '))
+		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] amjing,ngentod,sayang[white] '))
 		pwku=input('=)> Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
