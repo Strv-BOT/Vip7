@@ -168,7 +168,7 @@ def back():
 	login()
 
 def memek():
-	kontol()
+	banner()
 	print('%s 1. Info Author '%(H))
 	print('%s 2. Login '%(B))
 	yu = input('\033[33m 𝑷𝒊𝒍𝒊𝒉 : ')
