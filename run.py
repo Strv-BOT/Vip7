@@ -247,10 +247,10 @@ def tolol(my_name,my_id):
 	logo()
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'github.com/Strv-BOT'
-	print(f'\33[31m\tSelamat Datang %s Ngentod'%(my_name))
-	print(f'\33[31m\tYour Idz : '+str(my_id))
-	print(f'\33[31m\tYour Ip  : {ip}')
-	print(f'\33[31m\tGithub   : {gh}')
+	print(f'\33[31mSelamat Datang %s Ngentod'%(my_name))
+	print(f'\33[31mYour Idz : '+str(my_id))
+	print(f'\33[31mYour Ip  : {ip}')
+	print(f'\33[31mGithub   : {gh}')
 	print('')
 	print(' 1. Crack ID Publik ')
 	print(' 2. Hasil Crack  ')
@@ -1459,7 +1459,8 @@ def logo():
 \x1b[0;33[WHATSAPP  : \33[1;33m082290238779
 \x1b[0;33[INSTAGRAM : \33[1;33mTeddyyyy_11     
 \x1b[0;33[SCRIP FOR : \33[1;96mHacking & Cracking 
-\x1b[0;33[VERSION   : \33[1;96mV.01 Beta.Test  """)
+\x1b[0;33[VERSION   : \33[1;96mV.01 Beta.Test  
+""")
 		
 def infoauthor():
         print("%sMakasih Telah Menggunkan Tools Saya"%(N))
