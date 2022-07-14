@@ -247,15 +247,15 @@ def tolol(my_name,my_id):
 	logo()
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'github.com/Strv-BOT'
-	print(f'\tSelamat Datang [yellow]%s [white]Ngentod'%(my_name))
-	print(f'>> Your Idz : '+str(my_id))
-	print(f'>> Your Ip  : {ip}')
-	print(f'>> Github   : {gh}')
+	print(f'\33[31m\tSelamat Datang %s Ngentod'%(my_name))
+	print(f'\33[31m\tYour Idz : '+str(my_id))
+	print(f'\33[31m\tYour Ip  : {ip}')
+	print(f'\33[31m\tGithub   : {gh}')
 	print('')
-	print('>> 1. Crack Publik ')
-	print('>> 2. Hasil Crack  ')
-	print('>> 0. Keluar       ')
-	_____alvino__adijaya_____ = input('\n>> Pilih : ')
+	print(' 1. Crack ID Publik ')
+	print(' 2. Hasil Crack  ')
+	print(' 0. Keluar       ')
+	_____alvino__adijaya_____ = input('\n </> Pilih : ')
 	if _____alvino__adijaya_____ in ['1']:
 		kontoll()
 	elif _____alvino__adijaya_____ in ['2']:
@@ -263,13 +263,13 @@ def tolol(my_name,my_id):
 	elif _____alvino__adijaya_____ in ['0']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print('>> Sukses Logout+Hapus Kukis ')
+		print('</> Sukses Logout+Hapus Kukis ')
 		exit()
 	else:
-		print('>> Pilih Yang Bener Asu ')
+		print('</> Pilih Yang Bener Asu ')
 		back()
 def error():
-	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'{k}</> Maaf Fitur Ini Masih Di Perbaiki {x}')
 	time.sleep(4)
 	back()
 	
