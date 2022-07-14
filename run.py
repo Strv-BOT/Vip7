@@ -248,7 +248,7 @@ def tolol(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'github.com/Strv-BOT'
 	sol().print(mark(ler, style='cyan'))
-	krek = '\tSelamat Datang [yellow]%s [white]Ngentod'%(my_name)
+	krek = ('\tSelamat Datang [yellow]%s [white]Ngentod'%(my_name))
 	cetak(nel(krek, title='AKUN TUMBAL'))
 	print(f'>> Your Idz : '+str(my_id))
 	print(f'>> Your Ip  : {ip}')
