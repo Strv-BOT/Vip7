@@ -1463,13 +1463,13 @@ def logo():
 		
 def infoauthor():
         print("%sMakasih Telah Menggunkan Tools Saya"%(N))
-        jalan(f" Author SC : {K}Strovmirviaska\nWhatsapp : 082290238779\nGithub : https://github.com/Strv-BOT\nStatus SC : Gratis rasa Premium\nWARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.\n\nFIX BUG\n ✓ Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\nSedikit perubahan warna text dan tampilan SC\n✓ Perubahan user agent bawaan SC\n✓ Penambahan menampilkan Web & Aplikasi AKTIF")
+        jalan(f" </> Author SC : Strovmirviaska\n </> Whatsapp : 082290238779\n </> Github : https://github.com/Strv-BOT\n </> Status SC : Gratis rasa Premium\n </> WARNING : DILARANG MEMPERJUAL BELIKAN USERNAME & PASSWORD SC INI.\n\nFIX BUG :\n ✓ Terjadinya Error saat memainkan mode pesawat saat proses crack sedang berjalan, kini sudah diperbaiki dan sudah bisa dimainkan mode pesawat saat proses crack sedang berjalan\nSedikit perubahan warna text dan tampilan SC\n ✓ Perubahan user agent bawaan SC\n ✓ Penambahan menampilkan Web & Aplikasi AKTIF")
         upd = input('\n %s[%s?%s] Send direct message to Author [%sY%s/%st%s] : '%(N,K,N,H,N,M,N))
         if upd =="":
             exit(f"{N}[{M}×{N}] Sorry, it is wrong")
         elif upd in["Y","y"]:
             jalan("\n %s[%s•%s] %sYou will be redirected to the Author Whatsapp..."%(N,H,N,H));time.sleep(0.02)
-            os.system('xdg-open https://wa.me/082290238779?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);exit()
+            os.system('xdg-open https://wa.me/+6282290238779?text=Hallo+izin+menggunakan+SC+ini');time.sleep(2);exit()
         elif upd in["T","t"]:
             jalan(f"\n {N}[{H}•{N}] Ok, thank you...")
             jalan(' %s[%s✓%s] Retrun SC type "%spython run.py%s"'%(N,H,N,H,N));exit()
